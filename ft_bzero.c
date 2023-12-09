@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/05 11:49:37 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/30 07:08:16 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 10:49:39 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@
 */
 
 #include "libft.h"
-
-void	ft_bzero(void *s, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {
