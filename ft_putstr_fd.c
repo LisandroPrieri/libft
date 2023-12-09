@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 09:48:50 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/12/09 12:10:59 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:11:47 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (!s)
+	if (!s || fd < 0)
 		return ;
 	while (s[i])
 	{
