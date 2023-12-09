@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 09:48:50 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:08:50 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:10:59 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd);
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);
