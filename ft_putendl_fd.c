@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 10:05:42 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:10:12 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:07:04 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd);
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);
@@ -47,7 +47,7 @@ void	ft_putendl_fd(char *s, int fd)
 // 	char	*str;
 // 	int		fd;
 
-// 	str = "Lalala";
+// 	str = NULL;
 // 	fd = 1;
 // 	ft_putendl_fd(str, fd);
 // 	return (0);
