@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 13:16:37 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/28 15:03:54 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 11:18:52 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@
 */
 
 #include "libft.h"
-
-int	ft_isascii(int c);
 
 int	ft_isascii(int c)
 {

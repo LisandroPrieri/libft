@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 13:39:55 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/28 15:19:37 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 11:18:58 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
 */
 
 #include "libft.h"
-
-int	ft_isprint(int c);
 
 int	ft_isprint(int c)
 {

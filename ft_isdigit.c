@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 12:32:46 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:23:19 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:18:55 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
 */
 
 #include "libft.h"
-
-int	ft_isdigit(int c);
 
 int	ft_isdigit(int c)
 {

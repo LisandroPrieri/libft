@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 12:45:08 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/28 13:57:15 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 11:18:46 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@
 */
 
 #include "libft.h"
-
-int	ft_isalnum(int c);
 
 int	ft_isalnum(int c)
 {
