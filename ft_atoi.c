@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 11:47:50 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 12:24:54 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 10:16:16 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,6 @@
 
 #include "libft.h"
 
-int			ft_atoi(const char *nptr);
-static int	ft_isspace(char c);
-
 int	ft_atoi(const char *nptr)
 {
 	int			i;
@@ -34,7 +31,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	nbr = 0;
 	is_negative = 0;
-	while (ft_isspace(nptr[i]))
+	while ((nptr[i] >= '\t' && nptr[i] <= '\r') || nptr[i] == ' ')
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
@@ -50,14 +47,6 @@ int	ft_atoi(const char *nptr)
 	if (is_negative)
 		return ((int) -nbr);
 	return (nbr);
-}
-
-static int	ft_isspace(char c)
-{
-	if (c == ' ' || c == '\f' || c == '\n'
-		|| c == '\r' || c == '\t' || c == '\v')
-		return (1);
-	return (0);
 }
 
 /*
