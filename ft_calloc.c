@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 12:19:34 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/11/01 14:58:55 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 10:52:15 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@
 */
 
 #include "libft.h"
-
-void	*ft_calloc(size_t nmemb, size_t size);
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
