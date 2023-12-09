@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/05 13:50:24 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/30 14:16:02 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 11:36:41 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@
 */
 
 #include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 16:13:35 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/30 06:57:26 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 12:05:24 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@
 */
 
 #include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n);
 
 void	*ft_memset(void *s, int c, size_t n)
 {

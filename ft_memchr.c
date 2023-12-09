@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 12:31:37 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 12:07:59 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:04:30 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@
 */
 
 #include "libft.h"
-
-void	*ft_memchr(const void *s, int c, size_t n);
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -58,6 +56,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // 	s = "/|\x12\xff\x09\0\x42\042\0\42|\\";
 // 	c = '\0';
 // 	n = 12;
+// 	printf("%s\n", (char *) ft_memchr(s, c, n));
+
 // 	if (memchr(s, c, n) == ft_memchr(s, c, n))
 // 		printf("Success\n");
 // 	else

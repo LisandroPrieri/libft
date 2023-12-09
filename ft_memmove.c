@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/05 12:35:25 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 15:10:55 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:03:42 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,21 +24,21 @@
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n);
-
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*d;
 
+	d = (unsigned char *) dest;
 	i = 0;
-	if (!(unsigned char *)dest && !(unsigned char *)src)
+	if (!d && !(unsigned char *) src)
 		return (0);
 	if ((size_t)dest > (size_t)src
-		&& (size_t)((unsigned char *)src + n) >= (size_t)dest)
+		&& (size_t)((unsigned char *) src + n) >= (size_t)dest)
 	{
 		while (n > 0)
 		{
-			*((unsigned char *)dest + n - 1) = *((unsigned char *)src + n - 1);
+			*(d + n - 1) = *((unsigned char *)src + n - 1);
 			n--;
 		}
 	}
@@ -46,7 +46,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (i < n)
 		{
-			*((unsigned char *)dest + i) = *((unsigned char *)src + i);
+			*(d + i) = *((unsigned char *)src + i);
 			i++;
 		}
 	}

@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 12:42:17 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 12:13:08 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:36:32 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@
 */
 
 #include "libft.h"
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
