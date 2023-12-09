@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 10:09:53 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/27 14:07:06 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:09:19 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@
 */
 
 #include "libft.h"
-
-void	ft_putnbr_fd(int n, int fd);
 
 void	ft_putnbr_fd(int n, int fd)
 {
