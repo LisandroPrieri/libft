@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstadd_front.c                                  :+:    :+:            */
+/*   ft_lstadd_front_bonus.c                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 10:55:51 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/23 14:31:40 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:27:39 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@
 */
 
 #include "libft.h"
-
-void	ft_lstadd_front(t_list **lst, t_list *new);
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

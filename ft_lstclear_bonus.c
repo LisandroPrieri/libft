@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstclear.c                                      :+:    :+:            */
+/*   ft_lstclear_bonus.c                                :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 12:14:16 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:19:02 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:27:43 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ the content.
 */
 
 #include "libft.h"
-
-void	ft_lstclear(t_list **lst, void (*del)(void*));
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

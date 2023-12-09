@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstdelone.c                                     :+:    :+:            */
+/*   ft_lstdelone_bonus.c                               :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 14:33:50 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:18:36 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:27:47 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ the content.
 */
 
 #include "libft.h"
-
-void	ft_lstdelone(t_list *lst, void (*del)(void*));
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

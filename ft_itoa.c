@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 10:29:40 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 16:53:44 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:27:26 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,6 @@
 */
 
 #include "libft.h"
-
-char				*ft_itoa(int n);
-static unsigned int	count_int_length(long long n);
-static void			ft_intstr(char *str, int n);
 
 static unsigned int	count_int_length(long long n)
 {

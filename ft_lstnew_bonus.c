@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstnew.c                                        :+:    :+:            */
+/*   ft_lstnew_bonus.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 16:44:57 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:14:28 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:28:03 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@
 */
 
 #include "libft.h"
-
-t_list	*ft_lstnew(void *content);
 
 t_list	*ft_lstnew(void *content)
 {

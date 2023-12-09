@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstlast.c                                       :+:    :+:            */
+/*   ft_lstlast_bonus.c                                 :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 12:02:07 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:16:52 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:27:55 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
 */
 
 #include "libft.h"
-
-t_list	*ft_lstlast(t_list *lst);
 
 t_list	*ft_lstlast(t_list *lst)
 {

@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 19:05:51 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/11/01 14:55:17 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:28:00 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,6 @@
 */
 
 #include "libft.h"
-
-t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
-					void (*del)(void *));
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

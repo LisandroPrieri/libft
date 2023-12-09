@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstsize.c                                       :+:    :+:            */
+/*   ft_lstsize_bonus.c                                 :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 11:33:16 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:16:21 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 11:28:08 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
 */
 
 #include "libft.h"
-
-int	ft_lstsize(t_list *lst);
 
 int	ft_lstsize(t_list *lst)
 {
