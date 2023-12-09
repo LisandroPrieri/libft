@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 10:09:53 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/12/09 12:09:19 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:12:53 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	ft_putnbr_fd(int n, int fd)
 	long			nbr;
 	char			digit;
 
+	if (fd < 0)
+		return ;
 	nbr = n;
 	digit = 0;
 	if (n < 0)

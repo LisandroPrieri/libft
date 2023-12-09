@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 09:46:17 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/12/09 12:05:31 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/09 12:13:31 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd < 0)
+		return ;
 	write(fd, &c, 1);
 }
 
