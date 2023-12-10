@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/15 19:49:28 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 17:05:06 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/10 11:45:30 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,7 @@
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
