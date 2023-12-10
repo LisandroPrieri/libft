@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 14:13:10 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/28 15:20:17 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/10 00:37:17 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s);
-
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
+	if (!s)
+		return (0);
 	len = 0;
 	while (s[len] != '\0')
 		len++;
