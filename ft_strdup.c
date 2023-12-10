@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 14:27:36 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 12:56:30 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/10 11:34:49 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,25 @@
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s);
-
 char	*ft_strdup(const char *s)
 {
 	char	*str;
 	int		strlen;
+	int		i;
 
+	if (!s)
+		return (NULL);
 	strlen = ft_strlen(s);
 	str = (char *) malloc (strlen + 1);
 	if (str == NULL)
 		return (NULL);
-	ft_strlcpy(str, s, strlen + 1);
+	i = 0;
+	while (i < strlen)
+	{
+		str[i] = s[i];
+		i++;
+	}
+	str[i] = '\0';
 	return (str);
 }
 
