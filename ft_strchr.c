@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 17:23:23 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 11:36:19 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/10 11:27:24 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,11 @@
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c);
-
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	x;
+	char	x;
 
-	x = (unsigned char) c;
+	x = (char) c;	//When c is big enough, it overflows and we're back at the ASCII table
 	while (*s)
 	{
 		if (*s == x)
