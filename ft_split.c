@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/11 13:13:21 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/11/01 07:17:58 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/10 11:17:47 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,6 @@
 */
 
 #include "libft.h"
-
-char			**ft_split(char const *s, char c);
-static size_t	ft_count_words(char const *s, char c);
-static void		ft_split_words(char **arr, const char *s,
-					char c, int wordcount);
-static void		ft_free_arr(char **arr);
 
 static size_t	ft_count_words(char const *s, char c)
 {
@@ -86,7 +80,7 @@ static void	ft_split_words(char **arr, const char *s, char c, int wordcount)
 		}
 		arr[i] = ft_substr(s, (j - k), k);
 		if (!arr[i])
-			return ;
+			return (ft_free_arr(arr));
 		i++;
 	}
 	arr[i] = NULL;
@@ -96,7 +90,6 @@ char	**ft_split(char const *s, char c)
 {
 	char	**arr;
 	size_t	wordcount;
-	size_t	i;
 
 	if (!s)
 		return (NULL);
@@ -105,16 +98,6 @@ char	**ft_split(char const *s, char c)
 	if (!arr)
 		return (NULL);
 	ft_split_words(arr, s, c, wordcount);
-	i = 0;
-	while (i < wordcount)
-	{
-		if (arr[i] == NULL)
-		{
-			ft_free_arr(arr);
-			return (NULL);
-		}
-		i++;
-	}
 	return (arr);
 }
 
