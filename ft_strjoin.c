@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 17:50:08 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/31 13:47:52 by lprieri       ########   odam.nl         */
+/*   Updated: 2023/12/10 13:24:35 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,30 @@
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2);
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	len;
+	size_t	i;
+	size_t	j;
 
 	len = ft_strlen(s1) + ft_strlen(s2);
 	str = (char *) malloc (len + 1);
 	if (str == NULL)
 		return (NULL);
-	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
-	ft_strlcat(str, s2, len + 1);
+	i = 0 ;
+	while (s1 && s1[i])
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (s2 && s2[j])
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
 	return (str);
 }
 
