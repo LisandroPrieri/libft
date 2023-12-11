@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 17:17:53 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/30 20:57:03 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 12:34:33 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@
 */
 
 #include "libft.h"
-
-int	ft_tolower(int c);
 
 int	ft_tolower(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: lprieri <lprieri@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 16:23:37 by lprieri       #+#    #+#                 */
-/*   Updated: 2023/10/30 20:55:30 by lisandro      ########   odam.nl         */
+/*   Updated: 2023/12/09 12:34:37 by lprieri       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@
 */
 
 #include "libft.h"
-
-int	ft_toupper(int c);
 
 int	ft_toupper(int c)
 {
