@@ -2,7 +2,7 @@
 
 This project aims to teach students how to create their own first library.
 
-To do so we create our own implementation of some libc functions, and of some additional functions.
+To do so we create our own implementation of some libc functions, and some additional functions.
 
 # Disclaimer
 
