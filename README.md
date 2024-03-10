@@ -6,6 +6,6 @@ To do so we create our own implementation of some libc functions, and some addit
 
 # Disclaimer
 
-If you're a **Codam**/**42 school** student I encourage you do this project on your own.
+If you're a **Codam**/**42 school** student I encourage you try this project on your own before looking at somebody else's code.
 
-Only check other people's work wisely. Good reasons would for instance be when you're looking for inspiration, when you have to evaluate a project and want to have an idea of what the code might look like or when you would just like to compare it with your own work.
+Also I would recommend to only check other people's work wisely.
